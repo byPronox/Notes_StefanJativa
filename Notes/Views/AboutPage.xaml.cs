@@ -1,3 +1,5 @@
+using Notes.Models;
+
 namespace Notes.Views;
 
 public partial class AboutPage : ContentPage
@@ -5,6 +7,13 @@ public partial class AboutPage : ContentPage
     public AboutPage()
     {
         InitializeComponent();
+
+        var about = new About
+        {
+            Icon = "chill.jpg"  // Usamos la foto chill.jpg
+        };
+
+        BindingContext = about;
     }
 
     private async void LearnMore_Clicked(object sender, EventArgs e)
@@ -15,4 +24,6 @@ public partial class AboutPage : ContentPage
             await Launcher.Default.OpenAsync(about.MoreInfoUrl);
         }
     }
+
+    
 }

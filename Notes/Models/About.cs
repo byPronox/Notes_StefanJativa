@@ -1,9 +1,11 @@
-﻿namespace Notes.Models;
-
-internal class About
+﻿namespace Notes.Models
 {
-    public string Title => AppInfo.Name;
-    public string Version => AppInfo.VersionString;
-    public string MoreInfoUrl => "https://aka.ms/maui";
-    public string Message => "This app is written in XAML and C# with .NET MAUI.";
+    internal class About
+    {
+        public string Title => "Stefan Jativa";  // Usamos tu nombre
+        public string Version => AppInfo.VersionString;
+        public string MoreInfoUrl => "https://aka.ms/maui";
+        public string Message => "Soy una persona muy concurrente y me gusta hacer muchas cosas a la vez :)";  // Descripción personalizada en español
+        public string Icon { get; set; }  // Foto
+    }
 }
