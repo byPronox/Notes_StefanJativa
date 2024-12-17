@@ -77,13 +77,25 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Views\AboutPage.xaml">
+	  <Compile Update="Views\SJAllNotesPage.xaml.cs">
+	    <DependentUpon>SJAllNotesPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\SJNotePage.xaml.cs">
+	    <DependentUpon>SJNotePage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\SJAboutPage.xaml.cs">
+	    <DependentUpon>SJAboutPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\SJAboutPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\AllNotesPage.xaml">
+	  <MauiXaml Update="Views\SJAllNotesPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\NotePage.xaml">
+	  <MauiXaml Update="Views\SJNotePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
